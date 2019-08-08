@@ -1,0 +1,13 @@
+<div class="col-md-6 user-container">  
+    <form [formGroup]="CategoryForm" (ngSubmit)="onSubmit()">
+      <br>
+      <br>
+        <div class="form-group">
+            <label>Add New Category:</label>
+            <input type="text" formControlName="cname" placeholder="Enter Category" name="cname" class="form-control" id="cname">
+          </div>
+      <button class="btn btn-success">Add Category</button>
+    </form>
+    <br>
+  </div>
+  

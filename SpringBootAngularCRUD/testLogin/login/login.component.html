@@ -1,0 +1,222 @@
+<div class="wrapper sign_in">
+  <header id="header">
+    <div class="middle_header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="logo">
+              <h1>
+                <a href="#">
+                  <img class="img-fluid" title="Krios" alt="Krios" src="assets/images/logo.png">
+                </a>
+              </h1>
+            </div>
+            <div class="pull-right dropdown" style="position: relative;">
+              <button class="btn toggbtn dropdown-toggle" type="button" data-toggle="dropdown">Log In</button>
+              <div class="infotogg dropdown-menu">
+                <div class="login-wrapper">
+                  <ul class="nav nav-tabs">
+                    <li class=""><a class="active show" data-toggle="tab" href="#home">Log In</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active show">
+                      <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" name="" placeholder="Username" [(ngModel)]="username" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="" placeholder="Password" [(ngModel)]="password"
+                               class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" class=" btn toggbtn"
+                               [disabled]="username==null || password==null || password=='' || username==''"
+                               (click)="onSubmit()" value="SUBMIT" name="">
+                      </div>
+                      <a (click)="showDialog()" class="for_pass">Forgot Password ?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner_section">
+    <img src="assets/images/banner.jpg" alt="banner" title="banner">
+  </section>
+  <section class="content_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="birthday_div">
+                <span class="birth-tag">Upcoming Birthday</span>
+                <img src="assets/images/birthday-cake.png" alt="cake" title="cake">
+                <p class="message"> Happy Birthday to <b>Anant Kumar</b> on <b>10 April 2018</b></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-body ">
+                <div class="card-title">
+                  <h5>Company announcement</h5>
+                </div>
+                <div class="item-inner">There is a major doller lorem ipsum sir doler amet
+                  There is a major doller.lorem ipsum sir doler.major doller lorem ipsum sir dolorem ipsum sir
+                  doler.major doller lorem
+                  <span class="datetime">Friday, March 30 2018</span>
+                </div>
+                <div class="item-inner">There is a major doller lorem ipsum sir doler amet
+                  There is a major doller lorem ipsum sir doler.major doller lorem ipsum sir do
+                  <span class="datetime">Sunday, April 03 2018</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-body ">
+                <div class="card-title">
+                  <h5>Upcoming Events</h5>
+                </div>
+                <div class="details-image row">
+                  <img class="img-fluid" src="assets/images/events.jpg" title="events" alt="events">
+                </div>
+                <div class="item-inner">
+                  <span class="datetime">Sunday, April 03 2018</span>
+                  There is a major doller lorem ipsum sir doler amet
+                  There is a major doller lorem ipsum sir.There is a major doller lorem ipsum sir.
+                  There is a major doller lorem ipsum sir.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="video-col">
+                <img class="img-fluid" src="assets/images/vidone.jpg" alt="videoone" title="videoone">
+                <span class="date">
+                              March 30 2019
+                              </span>
+                <div class="bottominfo">
+                  <img class="img-fluid" src="assets/images/play-button.png" alt="play" title="play">
+                  <b>There is a major doller lorem ipsum sir doler amet</b>
+                  <a href="#">Watch Video ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="video-col">
+                <img class="img-fluid" src="assets/images/vidone.jpg" alt="videoone" title="videoone">
+                <span class="date">
+                              March 30 2019
+                              </span>
+                <div class="bottominfo">
+                  <img class="img-fluid" src="assets/images/play-button.png" alt="play" title="play">
+                  <b>There is a major doller lorem ipsum sir doler amet</b>
+                  <a href="#">Watch Video ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="video-col">
+                <img class="img-fluid" src="assets/images/vidone.jpg" alt="videoone" title="videoone">
+                <span class="date">
+                              March 30 2019
+                              </span>
+                <div class="bottominfo">
+                  <img class="img-fluid" src="assets/images/play-button.png" alt="play" title="play">
+                  <b>There is a major doller lorem ipsum sir doler amet</b>
+                  <a href="#">Watch Video ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-body news-colom">
+            <div class="card-title">
+              <h5>From the News</h5>
+            </div>
+            <div class="item-inner">
+              <span class="headline">Here is a major doller lorem ipsum sir</span>T doler amet There is a major doller
+              <span class="datetime">Friday, March 30 2018</span>
+            </div>
+            <div class="item-inner"><span class="headline">There is a major doller </span>
+              There is a major doller lorem ipsum sir doler.major
+              <span class="datetime">Sunday, April 03 2018</span>
+            </div>
+            <div class="item-inner"><span class="headline">There is a major doller </span>
+              There is a major doller lorem ipsum sir doler.
+              <span class="datetime">Sunday, April 03 2018</span>
+            </div>
+            <div class="item-inner"><span class="headline">There is a major doller lorem ipsum </span>
+              There is a major doller lorem ipsum sir doler.
+              <span class="datetime">Sunday, April 03 2018</span>
+            </div>
+          </div>
+          <div class="card card-body downloads">
+            <div class="card-title">
+              <h5>Downloads</h5>
+            </div>
+            <div class="item-inner">
+              <img class="img-fluid" src="assets/images/forms.png" alt="play" title="play">
+              <p class="download-caption">It user manual PDF</p>
+              <a class="download-button" href="#"><img class="img-fluid" src="assets/images/download.png"></a>
+            </div>
+            <div class="item-inner">
+              <img class="img-fluid" src="assets/images/book.png" alt="play" title="play">
+              <p class="download-caption">Brand Guidline PDF</p>
+              <a class="download-button" href="#"><img class="img-fluid" src="assets/images/download.png"></a>
+            </div>
+            <div class="item-inner">
+              <img class="img-fluid" src="assets/images/refferalform.png" alt="play" title="play">
+              <p class="download-caption">Referral From</p>
+              <a class="download-button" href="#"><img class="img-fluid" src="assets/images/download.png"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>Copyright 2019. <a " target="_blank">Pvt. Ltd.</a> All rights reserved.</p>
+  </footer>
+</div>
+
+
+<p-dialog [(visible)]="display" [modal]="true" [responsive]="true">
+  <p-header>
+    <a> Forgot Password</a>
+  </p-header>
+  <div class="modal-body">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="text-center">
+
+            <p>If you have forgotten your password you can reset it here.</p>
+            <div class="panel-body">
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control input-lg" placeholder="E-mail Address" autocomplete="off" name="email" [(ngModel)]="emailId" #emailIds="ngModel" (blur)="emailIdExistsCheck(emailIds.value)" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" type="text" required>
+<!--                  <small *ngIf="emailIds.errors.required">Email is required</small>-->
+                  <small *ngIf="emailIds.errors?.pattern" style="color: red">Email address not a valid.</small>
+                  <small *ngIf="emailAvailCheck" style="color: red">Email id not register.</small>
+                </div>
+                <input class="btn btn-lg btn-primary btn-block" value="Send My Password" type="button" [disabled]="emailId=='' || emailId==null || emailIds.invalid || emailAvailCheck" (click)="onForgotClick(emailId)">
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div align="right">
+    <button type="button" class="btn btn-primary" (click)="display=false;">Cancel</button>
+  </div>
+</p-dialog>
+
+<ngx-ui-loader></ngx-ui-loader>

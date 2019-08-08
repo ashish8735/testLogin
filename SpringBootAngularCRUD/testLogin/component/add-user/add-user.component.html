@@ -1,0 +1,45 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="col-md-6 user-container">
+  <form [formGroup]="addForm"  (ngSubmit)="onSubmit()"> 
+    <div class="form-group">
+      <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username">
+    </div>
+ 
+    <div class="form-group">
+      <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+    </div>
+
+    <div class="form-group">
+      <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+    </div>
+
+    <div class="form-group">
+      <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+    </div>
+
+    <div class="form-group">
+      <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
+    </div>
+    <div class="form-group">
+        <label for="role">Select Role:</label>
+      <select formControlName="role" name="role" class="form-control" id="role">
+          <option >Select</option>     
+        <option value="ROLE_ADMIN">ADMIN</option>
+             <option value="ROLE_USER">USER</option>
+             <option value="ROLE_DISTRIBUTER">DISTRIBUTER</option> 
+             <option value="ROLE_SUPPLIER">SUPPLIER</option>         
+           </select>
+         </div>
+    <button class="btn btn-success">Register</button>   
+    <br>
+     <div class="{{alert}}" style="color: rgb(245, 49, 14)" *ngIf="msg">{{msg}}</div>
+
+
+  </form>
+</div> 

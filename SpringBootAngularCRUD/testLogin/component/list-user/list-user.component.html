@@ -1,0 +1,30 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <br>
+<div class="table-responsive-sm">
+<table  border="1" style="width:80%">
+  <thead>
+    <th>empid</th>
+    <th>age</th>
+    <th>username</th>
+    <th>salary</th>
+    <th>firstname</th>
+    <th>lastname</th>
+    <th>role</th> 
+  </thead>
+  <tbody> 
+    <tr *ngFor="let user of list">
+      <td>{{user.id}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.salary}}</td> 
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.rol.roleName}}</td> 
+      <td><button type="button" class="btn btn-primary" (click)=updateEmployee(user)>Update</button></td>
+      <td><button type="button" class="btn btn-danger" (click)=deleteUser(user)>Delete</button></td>
+    </tr> 
+  </tbody>
+</table>
+</div>
